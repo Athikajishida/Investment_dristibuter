@@ -50,6 +50,7 @@ group :development, :test do
 end
 
 group :development do
+  gem 'rubocop', '~> 1.72', '>= 1.72.2'
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
 
@@ -69,3 +70,4 @@ end
 gem "tailwindcss-ruby", "~> 4.0"
 
 gem "tailwindcss-rails", "~> 4.1"
+
