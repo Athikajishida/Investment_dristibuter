@@ -2,6 +2,8 @@
 
 A Ruby on Rails application that helps calculate investment distributions across multiple bank accounts based on predefined rules and minimum balance requirements.
 
+![image](https://github.com/user-attachments/assets/1800f888-a7b2-47c6-96c7-94edf57da10c)
+
 ## Features
 
 - Store and manage bank account details in database
