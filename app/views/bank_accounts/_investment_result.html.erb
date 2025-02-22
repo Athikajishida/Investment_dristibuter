@@ -1,0 +1,19 @@
+<!-- app/views/bank_accounts/_investment_result.html.erb -->
+<% if local_assigns[:investment_result].present? %>
+  <div class="bg-white shadow-md rounded-lg p-6">
+    <h2 class="text-xl font-semibold mb-4">Investment Distribution</h2>
+    
+    <% if investment_result == "NO MATCH" %>
+      <p class="text-red-600 font-medium">NO MATCH - Unable to distribute the investment amount across available accounts.</p>
+    <% else %>
+      <div class="space-y-4">
+        <% investment_result.each do |result| %>
+          <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+            <span class="font-medium"><%= result[:account].name %></span>
+            <span class="text-green-600">₹<%= number_with_delimiter(result[:amount]) %></span>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+<% end %>
